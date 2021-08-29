@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/login_page.dart';
+import 'package:flutter_application_2/utils/Constants.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-import 'home_page.dart';
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-
-void main() {
+  Constants.prefs = await SharedPreferences.getInstance();
   runApp(
     MaterialApp(
-      title: "Awesome App",
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      title: "A Square Enterprises",
+      home: LoginPage(),
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
     ),
   );
 }
-
-
-

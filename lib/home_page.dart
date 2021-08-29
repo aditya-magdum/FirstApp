@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: Text("Awesome App"),
+        title: Text("Home Page"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
