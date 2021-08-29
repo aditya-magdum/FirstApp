@@ -1,0 +1,5 @@
+{
+    "dart.previewFlutterUiGuides": true,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true
+}
