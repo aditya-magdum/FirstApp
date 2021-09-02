@@ -11,7 +11,9 @@ class Mydrawer extends StatelessWidget {
             accountName: Text("A Square Enterprises"),
             accountEmail: Text("info@asquarenterprises.com"),
             currentAccountPicture: CircleAvatar(
-              child: Image.asset("as.png"),
+              backgroundImage: AssetImage("assets/as.png"),
+              //child: Image.asset("as.png"),
+
             ),
           ),
           ListTile(

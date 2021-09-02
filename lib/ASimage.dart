@@ -4,7 +4,7 @@ class ASimage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "HomePage.jpg",
+      "assets/HomePage.jpg",
       fit: BoxFit.cover,
     );
   }
