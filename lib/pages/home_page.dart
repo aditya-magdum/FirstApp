@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      //backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text("Home Page"),
       ),
@@ -20,11 +20,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Mydrawer(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.edit),
-      ),
+      drawer: MyDrawer(),
     );
   }
 }

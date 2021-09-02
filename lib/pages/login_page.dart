@@ -22,19 +22,20 @@ class _LoginPageState extends State<LoginPage> {
           fit: StackFit.expand,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(40.0),
+              padding: const EdgeInsets.all(20.0),
               child: Logo(),
             ),
             Center(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SingleChildScrollView(
-                  child: Card(
+                  
+                  child: Card(margin:const EdgeInsets.only(top: 150.0),
                     child: Column(
                       children: <Widget>[
                         Form(
                             child: Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.all(20.0),
                           child: Column(
                             children: <Widget>[
                               TextFormField(
@@ -54,9 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                             ],
                           ),
                         )),
-                        SizedBox(
-                          height: 20,
-                        ),
+
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: ElevatedButton(

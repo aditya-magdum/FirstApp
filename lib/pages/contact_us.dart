@@ -18,17 +18,18 @@ class _ContactUsState extends State<ContactUs> {
       children: [
         ASimage(),
         SizedBox(
-          height: 20,
+          height:15,
         ),
         Text(
           "Delivering Reliable, Safe & Quality Products",
+          textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 17,
             fontWeight: FontWeight.bold,
           ),
         ),
         SizedBox(
-          height: 20,
+          height: 8,
         ),
         Padding(
           padding: const EdgeInsets.all(16),
@@ -37,14 +38,14 @@ class _ContactUsState extends State<ContactUs> {
             child: Text(
               "Contact Us",
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 17,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(left:16.0,right:16.0),
           child: Column(
             children: [
               Form(
@@ -52,33 +53,31 @@ class _ContactUsState extends State<ContactUs> {
                   children: [
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "Your Name", border: OutlineInputBorder()),
+                          hintText: "Your Name",
+                          //border: OutlineInputBorder(),
+                      ),
                     ),
-                    SizedBox(
-                      height: 12,
-                    ),
+
                     TextFormField(
                       decoration: InputDecoration(
                         hintText: "Your Email",
-                        border: OutlineInputBorder(),
+                       // border: OutlineInputBorder(),
                       ),
                       keyboardType: TextInputType.emailAddress,
                     ),
-                    SizedBox(
-                      height: 12,
-                    ),
+
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "Your Phone", border: OutlineInputBorder()),
+                          hintText: "Your Phone",
+                        //border: OutlineInputBorder(),
+                      ),
                       keyboardType: TextInputType.phone,
                     ),
-                    SizedBox(
-                      height: 12,
-                    ),
+
                     TextFormField(
                       decoration: InputDecoration(
                           hintText: "Your Message",
-                          border: OutlineInputBorder(),
+                          //border: OutlineInputBorder(),
                           hintMaxLines: 3),
                     ),
                   ],
@@ -87,11 +86,9 @@ class _ContactUsState extends State<ContactUs> {
             ],
           ),
         ),
-        SizedBox(
-          height: 12,
-        ),
+
         Padding(
-          padding: const EdgeInsets.all(30.0),
+          padding: const EdgeInsets.all(5.0),
           child: ElevatedButton(
             onPressed: () {},
             child: Text(
